@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(177, 177, 177, 0.767);
+  border-radius: 12px;
+}
+
+.dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.first-item {
+  justify-content: center;
+  align-items: center;
+}
+
+.second-item {
+  justify-content: space-around;
+}
+
+.second-item > .dot {
+  margin-top: 15px;
+}
+
+.second-item .dot:nth-of-type(2) {
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.third-item {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.third-item .dot:nth-of-type(1) {
+  align-self: flex-start;
+  margin-top: 15px;
+}
+.third-item .dot:nth-of-type(3) {
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.fourth-item {
+  justify-content: space-between;
+}
+
+.fourth-item .fours-item-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.five {
+  display: flex;
+  align-self: center;
+}
+
+.fives-item {
+  justify-content: space-between;
+  padding: 5px 15px 5px 15px;
+}
+
+.fives-item .columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
